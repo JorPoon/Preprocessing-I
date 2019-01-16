@@ -48,13 +48,63 @@ table {
 	border-spacing: 0;
 }
 
+// Variables
+@heading-color: black;
+
+
+
 /* Set every element's box-sizing to border-box */
+// GENERAL STYLES!
 * {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
-	background:orangered;
+	background: white;
+	font-family: Tahoma, Geneva, sans-serif;
 }
+
+.container {
+	width: 880px ;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	margin: auto;
+	padding: 20px ;
+}
+
+h1 {
+	color: @heading-color;
+	font-size: 2rem;
+	letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2 {
+	color: @heading-color;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+header {
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly ;
+
+}
+
+a {
+	width: 5%;
+	padding: 20px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
 
