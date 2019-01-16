@@ -133,7 +133,7 @@ table {
 html,
 body {
   height: 100%;
-  background: white;
+  background: rgba(156, 142, 142, 0.541);
   font-family: Tahoma, Geneva, sans-serif;
 }
 .container {
@@ -142,16 +142,17 @@ body {
   flex-direction: row;
   flex-flow: wrap;
   margin: auto;
+  border: 1px solid teal;
   padding: 20px ;
 }
 h1 {
-  color: black;
+  color: #ee6078;
   font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
 h2 {
-  color: black;
+  color: #ee6078;
   font-size: 1.3rem;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -170,4 +171,39 @@ a {
   padding: 20px;
   margin: 0 auto;
   text-decoration: none;
+}
+.top-content {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #6767a5;
+}
+.top-content .jmppic {
+  width: 25%;
+  height: 200px;
+}
+.top-content li {
+  padding: 5px;
+}
+.top-content p {
+  padding: 20px;
+  color: orangered;
+}
+.middle-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-direction: nowrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
+.middle-content .summary {
+  width: 49%;
+}
+.middle-content .skills {
+  width: 49%;
 }

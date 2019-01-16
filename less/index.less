@@ -49,7 +49,7 @@ table {
 }
 
 // Variables
-@heading-color: black;
+@heading-color: rgb(238, 96, 120);
 
 
 
@@ -61,7 +61,7 @@ table {
 
 html, body {
 	height: 100%;
-	background: white;
+	background: rgba(156, 142, 142, 0.541);
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
@@ -71,6 +71,7 @@ html, body {
 	flex-direction: row;
 	flex-flow: wrap;
 	margin: auto;
+	border: 1px solid teal;
 	padding: 20px ;
 }
 
@@ -107,4 +108,49 @@ a {
 	text-decoration: none;
 }
 
+//SPECIFICS
 
+
+.top-content {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(103, 103, 165);
+	
+	.jmppic {
+		width: 25%;
+		height: 200px;
+	}
+
+	li {
+		padding: 5px;
+	}
+
+	p {
+		padding: 20px;
+		color: orangered;
+	}
+}
+
+.middle-content {
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+	flex-direction: nowrap;
+	justify-content: space-between;
+	padding: 20px;
+	margin: auto;
+
+	.summary {
+		width: 49%;
+
+	}
+
+	.skills {
+		width: 49%;
+	}
+
+}
