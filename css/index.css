@@ -132,7 +132,6 @@ table {
 }
 html,
 body {
-  height: 100%;
   background: rgba(156, 142, 142, 0.541);
   font-family: Tahoma, Geneva, sans-serif;
 }
@@ -144,29 +143,35 @@ body {
   margin: auto;
   border: 1px solid teal;
   padding: 20px ;
+  justify-content: center;
 }
-h1 {
+.container h1 {
   color: #ee6078;
   font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-h2 {
+.container h2 {
   color: #ee6078;
   font-size: 1.3rem;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-header {
+.container h3 {
+  font-size: 1.1rem;
+  color: #a567a5;
+  padding: 10px;
+}
+.container header {
   width: 100%;
 }
-nav {
+.container nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
-a {
+.container a {
   width: 5%;
   padding: 20px;
   margin: 0 auto;
@@ -206,4 +211,16 @@ a {
 }
 .middle-content .skills {
   width: 49%;
+}
+.bottom-content {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+footer {
+  align-self: center;
 }
