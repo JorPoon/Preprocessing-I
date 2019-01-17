@@ -178,7 +178,7 @@ body {
   margin: 0 auto;
   text-decoration: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .container {
     width: 100%;
     flex-wrap: wrap;
