@@ -136,14 +136,15 @@ body {
   font-family: Tahoma, Geneva, sans-serif;
 }
 .container {
-  width: 880px ;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 880px ;
   flex-direction: row;
   flex-flow: wrap;
   margin: auto;
   border: 1px solid teal;
   padding: 20px ;
-  justify-content: center;
 }
 .container h1 {
   color: #ee6078;
@@ -176,6 +177,13 @@ body {
   padding: 20px;
   margin: 0 auto;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 .top-content {
   width: 100%;
@@ -211,6 +219,11 @@ body {
 }
 .middle-content .skills {
   width: 49%;
+}
+@media (max-width: 800px) {
+  .middle-content {
+    flex-flow: column;
+  }
 }
 .bottom-content {
   width: 100%;

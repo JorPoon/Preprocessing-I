@@ -51,7 +51,19 @@ table {
 // Variables
 @heading-color: rgb(238, 96, 120);
 
+// Mixins
 
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+//   .line() {
+// 	  padding: 5px;
+// 	  font-size: 1rem;
+// 	  font-family: Comic-sans;
+//   }
 
 /* Set every element's box-sizing to border-box */
 // GENERAL STYLES!
@@ -66,14 +78,14 @@ html, body {
 }
 
 .container {
+	.center(); 
 	width: 880px ;
-	display: flex;
 	flex-direction: row;
 	flex-flow: wrap;
 	margin: auto;
 	border: 1px solid teal;
 	padding: 20px ;
-	justify-content: center;
+	
 
 	h1 {
 		color: @heading-color;
@@ -114,6 +126,13 @@ html, body {
 		margin: 0 auto;
 		text-decoration: none;
 	}
+
+	@media( max-width: 800px ) {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	
 }
 
 
@@ -143,6 +162,8 @@ html, body {
 		padding: 20px;
 		color: orangered;
 	}
+
+	
 }
 
 .middle-content {
@@ -156,11 +177,15 @@ html, body {
 
 	.summary {
 		width: 49%;
-
 	}
 
 	.skills {
 		width: 49%;
+	}
+
+	@media (max-width: 800px) {
+		
+		flex-flow: column;
 	}
 
 }
